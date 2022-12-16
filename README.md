@@ -34,13 +34,12 @@ subnet_address_prefix_dmz      |["10.0.3.0/24"]
 availability_set_name                         | "tf-avail-set"
 availability_set_platform_fault_domain_count  | 3
 availability_set_platform_update_domain_count | 20
-VM image              = "UbuntuServer"
-pip_name              = "tf-public-ip"
-pip_allocation_method = "Static"
-
-lb_name                                = "tf-lb"
-lb_rule_protocol                       = "Tcp"
-lb_rule_frontend_port                  = 80
+VM image              | "UbuntuServer"
+pip_name              | "tf-public-ip"
+pip_allocation_method | "Static"
+lb_name                                | "tf-lb"
+lb_rule_protocol                       | "Tcp"
+lb_rule_frontend_port                  | 80
 
 ## Providers
 
