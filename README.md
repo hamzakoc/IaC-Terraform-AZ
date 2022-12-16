@@ -11,32 +11,32 @@
 - Vnet
 - Subnet
 
+tfsate file can be stored in a container on Azure Portal. 
+It is stored locally by default
 
-
-This module will use a specific Azure storage account as a backend to keep our terraform.tfstate . You can change the storage account from the "backend.tf" file to your desired location.
 
 
 
 ## Variables:
 | Name | Version |
 |------|---------|
-rg_name  = "rg_canadacentral"
-location = "canadacentral"
-sa_name                     = "hmzkocstoragetest"
-sa_account_tier             = "Standard"
-sa_account_replication_type = "LRS"
-vnet_name          = "tf-vnet"
-vnet_address_space = ["10.0.0.0/16"]
-subnet_name_frontend           = "frontend"
-subnet_address_prefix_frontend = ["10.0.1.0/24"]
-subnet_name_backend            = "backend"
-subnet_address_prefix_backend  = ["10.0.2.0/24"]
-subnet_name_dmz                = "dmz"
-subnet_address_prefix_dmz      = ["10.0.3.0/24"]
-availability_set_name                         = "tf-avail-set"
-availability_set_platform_fault_domain_count  = 3
-availability_set_platform_update_domain_count = 20
-availability_set_managed                      = true
+rg_name  | "rg_canadacentral"
+location | "canadacentral"
+sa_name                     | "hmzkocstoragetest"
+sa_account_tier             | "Standard"
+sa_account_replication_type | "LRS"
+vnet_name          | "tf-vnet"
+vnet_address_space | ["10.0.0.0/16"]
+subnet_name_frontend          | "frontend"
+subnet_address_prefix_frontend | ["10.0.1.0/24"]
+subnet_name_backend            | "backend"
+subnet_address_prefix_backend  | ["10.0.2.0/24"]
+subnet_name_dmz                | "dmz"
+subnet_address_prefix_dmz      |["10.0.3.0/24"]
+availability_set_name                         | "tf-avail-set"
+availability_set_platform_fault_domain_count  | 3
+availability_set_platform_update_domain_count | 20
+availability_set_managed                      | true
 availability_set_tags = {
   "environment" = "Production"
 }
