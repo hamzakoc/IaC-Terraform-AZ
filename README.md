@@ -18,7 +18,7 @@ It is stored locally by default
 
 
 ## terraform.tfvars file includes:
-| Name | Version |
+| Name | Value |
 |------|---------|
 rg_name  | "rg_canadacentral"
 location | "canadacentral"
